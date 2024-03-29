@@ -61,14 +61,16 @@
 
 .header div {
   background-color: yellow;
-  width: 18%;
-  margin: 5px;
+  width: 14%;
+  /* margin: 5px; */
   text-align: center;
+  word-break: break-all;
 }
 .columns div {
-  width: 18%;
-  margin: 5px;
+  width: 14%;
+  /* margin: 5px; */
   text-align: left;
+  word-break: break-all;
 }
 
 .success { color: green; }
