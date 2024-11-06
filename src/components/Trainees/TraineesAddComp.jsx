@@ -19,7 +19,7 @@ export default function TraineesAddComp() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/v1/trainees/readTrainers')
+        axios.get('https://june-aug-offline-batch-nodejs-with-mongoose.vercel.app/api/v1/trainees/readTrainers')
             .then(res => setTrainers(res.data.data));
     }, [])
 
@@ -37,7 +37,7 @@ export default function TraineesAddComp() {
         formData.append("photo", photo);
         formData.append("trainer", trainer);
 
-        axios.post('http://localhost:5000/api/v1/trainees/createTrainee', formData, {
+        axios.post('https://june-aug-offline-batch-nodejs-with-mongoose.vercel.app/api/v1/trainees/createTrainee', formData, {
             headers: { 'Content-Type': 'multipart/form-data' }
         })
             .then(response => {
